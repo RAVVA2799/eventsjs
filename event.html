@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head></head>                             
+
+<style>
+
+button{
+                                         /*js events*/
+color:rgb(23, 61, 61);
+font-size: 50px;
+
+}
+
+
+</style>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+
+
+<h2>       MOUSE ELEMENTS</h2>
+
+
+<div onmouseover="this.style.backgroundColor='red'">myDIV.          
+</div>
+
+
+<div onmouseout="this.style.backgroundColor='yellow'">myDIV</div>
+
+<button onclick="alert('Hello')">Click me.</button>
+
+<h3>when user presses the mouse over an element</h3>
+
+<div onmousedown="this.style.backgroundColor='red'">PRESS HERE TO SEE THE MAGIC.          
+</div>
+
+
+<H3>KEYBOARD EVENT OBJECT</H3>
+
+
+
+<input type="text" onkeydown="isKeyPressed(event)">
+
+<p id="demo"></p>
+
+
+
+<script>
+function isKeyPressed(event) {
+  var x = document.getElementById("demo");
+  if (event.ctrlKey) {
+    x.innerHTML = "The CTRL key was pressed!";
+  } else {
+    x.innerHTML = "The CTRL key was NOT pressed!";
+  }
+}
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
